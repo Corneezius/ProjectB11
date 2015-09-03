@@ -22,3 +22,6 @@ meteoric:ionicons-sass@0.1.6
 meteoric:ionic@0.1.17
 meteoric:autoform-ionic
 reactive-var
+accounts-ui
+accounts-facebook
+useraccounts:core
