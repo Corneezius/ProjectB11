@@ -23,6 +23,12 @@ Template.recent.rendered = function () {
         likeSelector: '.like',
         dislikeSelector: '.dislike'
       });
+      $(".item").click(function(mouseEvent){ 
+        if ($(mouseEvent.currentTarget).hasClass("dragging")) {
+          mouseEvent.preventDefault(); 
+          $(mouseEvent.currentTarget).removeClass("dragging");
+        }
+      });
     }
   }.bind(this));
 };
@@ -30,5 +36,11 @@ Template.recent.rendered = function () {
 Template.recent.helpers({
   products: function () {
     return Products.find({}, {sort: {createdAt: -1, name: -1}});
+  }
+});
+
+Template.recent.events({
+  'dragstart .item': function(e, t) {
+    $(e.currentTarget).addClass('dragging');
   }
 });
