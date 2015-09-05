@@ -1,4 +1,5 @@
 <template name="_productItem">
+  <li>
   {{#with product}}
     {{#ionItem path=../path iconLeft=true iconRight=true}}
       {{> _voteButton}}
@@ -12,4 +13,5 @@
       </span>
     {{/ionItem}}
   {{/with}}
+  </li>
 </template>
