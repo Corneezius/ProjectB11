@@ -18,11 +18,11 @@
 
   {{#ionView}}
     {{#ionContent}}
-      {{#ionList}}
-        {{#each products}}
-          {{> _productItem product=this path="products.show"}}
-        {{/each}}
-      {{/ionList}}
+        <ul id="tinderslide">
+          {{#each products}}
+            {{> _productItem product=this path="products.show"}}
+          {{/each}}
+        </ul>
     {{/ionContent}}
   {{/ionView}}
 
