@@ -18,12 +18,14 @@
 
   {{#ionView}}
     {{#ionContent}}
-        <ul id="tinderslide">
+      <div id="tinderslide">
+        <ul>
           {{#each products}}
             {{> _productItem product=this path="products.show"}}
           {{/each}}
         </ul>
+      </div>
     {{/ionContent}}
   {{/ionView}}
-
+  {{initializejTinder}}
 </template>
