@@ -16,9 +16,9 @@ body {
 }
 
 #tinderslide {
-    position: relative;
+    /*position: relative;
     background: #fff;
-    width: 95%;
+    width: 95%;*/
     height: 100%;
 }
 
@@ -31,13 +31,15 @@ body {
 
 #tinderslide li {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 500px;
+    height: 100px;
     overflow: hidden;
     position: absolute;
     top: 0;
     z-index: 2;
     left: 0;
+    bottom: 0;
+    right: 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
     overflow: hidden;
     text-align: center;
@@ -55,10 +57,11 @@ body {
     transform: translate3d(0%,0,0) scale3d(1,1,1);
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    margin: auto;
 }
 
 /* Image text */
-#tinderslide li h2 {
+/*#tinderslide li h2 {
     color: #fff;
     font-size: 30px;
     text-align: center;
@@ -67,7 +70,7 @@ body {
     left: 0;
     width: 100%;
     text-shadow: -1px -1px 0 rgba(0, 0, 0, .2);
-}
+}*/
 
 /* Image rotation */
 #tinderslide li.pane1 {
