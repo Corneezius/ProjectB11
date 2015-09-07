@@ -58,9 +58,9 @@
 /* Image rotation */
 
 /* Like & dislike badge images */
-/*#tinderslide .like,
+#tinderslide .like,
 #tinderslide .dislike {
-    background: url("../img/liked.png") no-repeat scroll 0 0;
+    background: url("/images/liked.png") no-repeat scroll 0 0;
     opacity: 0;
     height: 80px;
     position: absolute;
@@ -76,13 +76,13 @@
     transform: translate3d(0%,0,0) scale3d(1,1,1);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-}*/
+}
 
-/*#tinderslide .dislike {
+#tinderslide .dislike {
     right: 45px;
     left: auto;
-    background: url("../img/nope.png") no-repeat scroll 0 0;
-}*/
+    background: url("/images/nope.png") no-repeat scroll 0 0;
+}
 
 /* Image container */
 #tinderslide .img {
