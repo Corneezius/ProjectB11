@@ -6,7 +6,7 @@ Template._voteButton.events({
       IonModal.open('signIn');
       return;
     }
-
+    $("#tinderslide").jTinder('like');
     Meteor.call('Products.vote', this._id);
   }
 });
