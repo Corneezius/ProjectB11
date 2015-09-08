@@ -11,11 +11,12 @@ Template.recent.rendered = function () {
     } else {
       IonLoading.hide();
       $("#tinderslide").jTinder({
-        onDislike: function (item) {
-            alert('Dislike image ' + (item.index()+1));
-        },
         onLike: function (item) {
-            alert('Like image ' + (item.index()+1));
+          if (!Meteor.user()) {
+            IonModal.open('signIn');
+            return;
+          }
+          Meteor.call('Products.vote', $(item).data("itemid"));
         },
         animationRevertSpeed: 200,
         animationSpeed: 400,
