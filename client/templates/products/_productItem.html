@@ -1,18 +1,18 @@
 <template name="_productItem">
-  <li>
   {{#with product}}
-    {{#ionItem path=../path iconLeft=true iconRight=true}}
-      {{> _voteButton}}
-      <h2>{{name}}</h2>
-      <p>
-        {{tagline}}
-      </p>
-      <span class="comments-count">
-        {{numberOfComments}}
-        {{> ionIcon icon="ios-chatbubble" }}
-      </span>
-    {{/ionItem}}
+    <li data-itemid="{{_id}}">
+      {{#ionItem path=../path iconLeft=true iconRight=true}}
+        {{> _voteButton}}
+        <h2>{{name}}</h2>
+        <p>
+          {{tagline}}
+        </p>
+        <span class="comments-count">
+          {{numberOfComments}}
+          {{> ionIcon icon="ios-chatbubble" }}
+        </span>
+      {{/ionItem}}
+      <div class="like"></div><div class="dislike"></div>
+    </li>
   {{/with}}
-  <div class="like"></div><div class="dislike"></div>
-  </li>
 </template>
